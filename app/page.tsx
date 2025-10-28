@@ -7,6 +7,8 @@ import Button from '@/components/ui/Button'
 import Card from '@/components/ui/Card'
 import type { User } from '@supabase/supabase-js'
 
+export const dynamic = 'force-dynamic'
+
 export default function Home() {
   const [user, setUser] = useState<User | null>(null)
   const [authModalOpen, setAuthModalOpen] = useState(false)
